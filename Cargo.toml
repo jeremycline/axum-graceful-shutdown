@@ -3,24 +3,18 @@ name = "axum-graceful-shutdown"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
+axum-server= "0.4.0"
+futures-util= "0.3.21"
+tokio-tungstenite= "0.17.1"
+url= "2.2.2"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies.axum]
-version = "0.4"
+version = "0.5.10"
 features = ["ws"]
 
-[dependencies.axum-server]
-version = "0.3"
-
-[dependencies.futures-util]
-version = "0.3"
-
 [dependencies.tokio]
-version = "1"
+version = "1.19.2"
 features = ["full"]
-
-[dependencies.tokio-tungstenite]
-version = "0.17"
-
-[dependencies.url]
-version = "2"
